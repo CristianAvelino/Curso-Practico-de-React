@@ -1,5 +1,9 @@
 import React from 'react';
-import '../styles/Header.scss';
+import '@styles/Header.scss';
+
+const menu = '@icons/icon_menu.svg';
+const logo = '@logos/logo_yard_sale.svg';
+const shoppingCart = '@icons/icon_shopping_cart.svg'; 
 
 const Header = () => {
     return(
@@ -7,7 +11,7 @@ const Header = () => {
         <img src="./icons/icon_menu.svg" alt="menu" className="menu" />
     
         <div className="navbar-left">
-          <img src="./logos/logo_yard_sale.svg" alt="logo" className="logo" />
+          <img src={logo} alt="logo" className="logo" />
     
           <ul>
             <li>
@@ -35,7 +39,7 @@ const Header = () => {
           <ul>
             <li className="navbar-email">platzi@example.com</li>
             <li className="navbar-shopping-cart">
-              <img src="./icons/icon_shopping_cart.svg" alt="shopping cart" />
+              <img src={shoppingCart} alt="shopping cart" />
               <div>2</div>
             </li>
           </ul>
